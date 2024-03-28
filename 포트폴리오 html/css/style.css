@@ -1,0 +1,724 @@
+@charset "utf-8";
+@import url('./reset.css');
+#wrap {width: 100%;}
+
+/* 헤더 */
+#wrap #header{
+    width: 100%;
+    height: 194px;
+    position: absolute;
+    border-bottom: none;
+    z-index: 3;
+    }
+
+/* 헤더- 탑 */
+#wrap #header .top{
+    width: 980px;
+    height: 90px;
+    margin: 0 auto;
+    border-bottom: 1px solid #b2b2b2;
+    border-bottom-color: rgba(255, 255, 255, .3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrap #header .top .menu1{
+    float: left;
+    margin-top: 40px;
+    padding-right: 120px;
+    display: flex;
+    
+    
+}
+#wrap #header .top .menu1 li{
+    margin: 14px;
+    float: left;
+    display: list-item;
+    display: flex;
+}
+#wrap #header .top .menu1 li a{
+    height: 14px;
+    line-height: 14px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    color: #777;
+    white-space: nowrap;
+
+}
+#wrap #header .top .menu1 li img {
+    width: 10px;height: 10px; margin: 0 5px;
+}
+
+
+#wrap #header .top .menu2{
+    float: right;
+    margin-top: 20px;
+    padding-left: 60px;
+    display: flex;
+}
+#wrap #header .top .menu2 li{
+    margin: 14px;
+    float: right;
+    display: list-item;
+}
+#wrap #header .top .menu2 li a {
+    height: 14px;
+    line-height: 14px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #777;
+    white-space: nowrap;
+}
+
+
+
+#wrap #header .top h1{background-image: url(../imgs/logo_header.png);}
+#wrap #header .top h1 a{display: block; width: 219px;height: 37px; padding: 10px 50px;}
+
+
+/* 헤더-바텀 */
+#wrap #header .bottom{width: 100%;height: 80px;}
+
+/* 메인네비게이션 */
+#wrap #header .bottom #nav{width: 25%;position: relative; z-index: 4;left: 39.5%;}
+#wrap #header .bottom #nav >ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrap #header .bottom #nav >ul>li{width: 90px;}
+#wrap #header .bottom #nav >ul>li a{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s;
+    
+}
+#wrap #header .bottom #nav >ul>li a:hover{
+    color: #aaa;
+}
+#wrap #header .bottom #nav >ul>li a.on{
+    color: #aaa;
+}
+
+
+/* 서브메뉴 */
+#wrap #header .bottom #nav >ul>li .sub{
+    width: 500%;
+    height: auto;
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    top: 40px;
+    left: -200%;
+    
+   
+}
+#wrap #header .bottom #nav >ul>li .sub.on{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap #header .bottom #nav >ul>li .sub .sub-container{width: 550px;}
+#wrap #header .bottom #nav >ul>li .sub .sub-container >ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+#wrap #header .bottom #nav >ul>li .sub .sub-container >ul>li{width: 90px;}
+#wrap #header .bottom #nav >ul>li .sub .sub-container >ul>li>a{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 12px;
+    
+}
+#wrap #header .bottom #nav >ul>li .sub .sub-container >ul>li>a:hover{
+   
+    color: #fff;
+}
+
+/* 로그인/회원가입 */
+#wrap #header .bottom #aside {width:100%;}
+#wrap #header .bottom #aside span {
+    width:100%;
+    padding-left: 800px;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 44%;
+    display: flex;
+    z-index: 3;
+    justify-content:center;
+}
+#wrap #header .bottom #aside span a {font-size: 13px;color:#fff;}
+#wrap #header .bottom #aside span a:hover {color:#66f;font-weight: 500;}
+#wrap #header .bottom #aside span i {font-size: 13px;color:#ccc;margin:0 5px;}
+
+/* 메인 */
+#wrap #main{width: 100%;
+    overflow: hidden;
+}
+
+
+/* 섹션1 메인슬라이드 */
+#wrap #main #section1{ 
+    width: 100%;
+    height: 774px;
+    
+}
+#wrap #main #section1 .slide-container{
+    width:100%;
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    cursor: grab;
+}
+#wrap #main #section1 .slide-container .slide-content{width: 100%;height: 100%;}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap{
+    width: 500%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    margin-left: -100%;
+    
+}
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide {
+    width: 100%;
+    height: 100%;
+    background:url() no-repeat 50% 50% ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide1  {
+    background-image: url(../imgs/slide1.jpg);
+    
+}
+
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide2  {
+    background-image: url(../imgs/slide2.jpg)
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide3 {
+    background-image: url(../imgs/slide3.jpg)
+}
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming1{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming2{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming3{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming1 .arrow-btn1 {
+    width:auto;
+    
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming1 .arrow-btn1 img{
+    width:auto;
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming2 .arrow-btn2 {
+    width:auto;
+    
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming2 .arrow-btn2 img{
+    width:auto;
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming3 .arrow-btn3 {
+    width:auto;
+    
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide .sl-striming3 .arrow-btn3 img{
+    width:auto;
+}
+
+
+
+
+
+
+
+
+/* 섹션2 */
+#wrap #main #section2{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    background: #111;
+    overflow: hidden;
+    
+   
+}
+#wrap #main #section2 .container{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* 섹션2 타이틀 */
+#wrap #main #section2 .container title{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+#wrap #main #section2 .container title h2{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+/* 섹션2 컨텐츠 */
+#wrap #main #section2 .container .content{width: 100%;height: 100%;}
+
+/* 갤러리 */
+#wrap #main #section2 .container .content .gallery{width: 100%;height: 100%;}
+
+
+#wrap #main #section2 .container .content .gallery ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#wrap #main #section2 .container .content .gallery ul li{
+    width: 200px;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#wrap #main #section2 .container .content .gallery ul li a{
+    display: flex;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    background-size: cover;
+}
+#wrap #main #section2 .container .content .gallery ul li .name{
+display: flex; align-items: center; margin-top: 10px;
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(1) .name > p{
+    height: 22px; width: 22px; background-size: cover;
+    background: url('../imgs/grade_15.png') no-repeat 50% 50%;
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(2) .name > p{
+    height: 22px; width: 22px; background-size: cover;
+    background: url('../imgs/grade_all.png') no-repeat 50% 50%;
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(3) .name > p{
+    height: 22px; width: 22px; background-size: cover;
+    background: url('../imgs/grade_15.png') no-repeat 50% 50%;
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(4) .name > p{
+    height: 22px; width: 22px; background-size: cover;
+    background: url('../imgs/grade_12.png') no-repeat 50% 50%;
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(5) .name > p{
+    height: 22px; width: 22px; background-size: cover;
+    background: url('../imgs/grade_12.png') no-repeat 50% 50%;
+}
+
+#wrap #main #section2 .container .content .gallery ul li .name > span{
+    color: #fff;
+    font-weight: 900;
+    padding-left: 10px;
+}
+#wrap #main #section2 .container .content .gallery ul li a:hover{opacity: 1;}
+
+
+#wrap #main #section2 .container .content .gallery ul li:nth-child(1) a {
+    background-image: url(../imgs/top1.jpg);
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(2) a {
+    background-image: url(../imgs/top2.jpg);
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(3) a {
+    background-image: url(../imgs/top3.jpg);
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(4) a {
+    background-image: url(../imgs/top4.jpg);
+}
+#wrap #main #section2 .container .content .gallery ul li:nth-child(5) a {
+    background-image: url(../imgs/top5.jpg);
+}
+
+
+/* 섹션3 */
+#wrap #main #section3{width: 100%;}
+#wrap #main #section3 .container{width: 100%;height: 100%;}
+#wrap #main #section3 .container .title{width: 100%;height: 100%;padding-top: 30px; margin-left: 460px;}
+#wrap #main #section3 .container .title h2{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    color: #111;
+    
+}
+
+
+#wrap #main #section3 .container .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+#wrap #main #section3 .container .content .left{}
+#wrap #main #section3 .container .content .left .top{}
+#wrap #main #section3 .container .content .left .top > ul{display: flex;}
+#wrap #main #section3 .container .content .left .top > ul > li{height: 250;padding: 5px;}
+#wrap #main #section3 .container .content .left .top > ul > li > a{}
+#wrap #main #section3 .container .content .left .top > ul > li > a > img{}
+
+
+
+#wrap #main #section3 .container .content .left .bottom{}
+#wrap #main #section3 .container .content .left .bottom > ul{display: flex;}
+#wrap #main #section3 .container .content .left .bottom > ul > li{padding: 5px;}
+#wrap #main #section3 .container .content .left .bottom > ul > li > a{}
+#wrap #main #section3 .container .content .left .bottom > ul > li > a >img{}
+
+
+#wrap #main #section3 .container .content .right{}
+#wrap #main #section3 .container .content .right > ul{}
+#wrap #main #section3 .container .content .right > ul > li{padding: 5px;}
+#wrap #main #section3 .container .content .right > ul > li > a{}
+#wrap #main #section3 .container .content .right > ul > li > a > img{}
+
+
+/* 푸터 */
+#wrap #footer{  
+    width: 100%;
+    height: 150px;    
+    position: relative;
+    display: flex;
+    
+    
+}
+
+/* 푸터 왼쪽 */
+#wrap #footer .left{  
+    width: 300px;
+    height: 100%;}
+#wrap #footer .left .mas-box{width:100%;}
+#wrap #footer .left .mas-box iframe{ 
+    width:100%; 
+    height: 200px;
+    border: 1px solid #ccc;
+}
+
+
+
+/* 푸터 중앙 */
+#wrap #footer .center{
+    width: calc(100% - 400px);
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+#wrap #footer .center h1{width: 100%;height: 100%;}
+#wrap #footer .center h1 a{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+#wrap #footer .center h1 a img{width:20%;filter: grayscale(1);opacity: 0.3;padding-bottom: 2px;}
+
+
+#wrap #footer .center p{
+    padding-bottom: 10px;
+}
+#wrap #footer .center address{ 
+    font-size: 18px;
+    color: #bbb;
+    line-height: 150%;
+    width: 70%;
+    text-align: center;
+    
+}
+
+#wrap #footer .center span{
+    display: block;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #bbb;
+    width: 100%;
+    text-align: center;
+}
+
+/* 푸터 오른쪽 */
+#wrap #footer .right{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: #ccc;
+}
+
+/* 푸터 오른쪽-탑 패밀리 사이트*/
+#wrap #footer .right .top{}
+#wrap #footer .right .top .family-box{width: 100%;padding: 20px 0;text-align: center;}
+#wrap #footer .right .top .family-box select{
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+/* 푸터 오른쪽-바텀 어워드 */
+#wrap #footer .right .bottom{}
+#wrap #footer .right .bottom .award{width: 100%;}
+#wrap #footer .right .bottom .award a{margin: 10px 5px;}
+#wrap #footer .right .bottom .award a img{width:auto;}
+
+
+
+/* 모달창 1번 멤버쉽 */
+#wrap .modal1{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0,0,0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrap .modal1.close {display: none;} 
+#wrap .modal1.open {display: flex;} 
+
+#wrap .modal1 .container{
+    width: 377px;    
+    height: 520px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 40px auto;
+    border: 1px solid #ccc;
+}
+#wrap .modal1 .container a{}
+#wrap .modal1 .container a img{}
+#wrap .modal1 .container .button-box{width: 100%;display: flex; }
+#wrap .modal1 .container .button-box .left {width: 50%; text-align:left; padding: 6px 6px}
+#wrap .modal1 .container .button-box .left input{}
+#wrap .modal1 .container .button-box .left input label{}
+#wrap .modal1 .container .button-box .right {width: 50%; display: flex;justify-content: right;padding: 5px;}
+#wrap .modal1 .container .button-box .right button {width: 30%;}
+
+
+
+
+
+
+
+
+/* 모달 2번 슬라이드버튼 모달 */
+
+#wrap .modal2 {
+    display: none; /* 모달을 기본적으로 숨김 */
+    position: fixed; /* 고정 위치 */
+    z-index: 5; /* 다른 요소 위에 배치 */
+    left: 0;
+    top: 0;
+    width: 100%;    
+    height: 100%;
+    
+    background-color: rgba(0,0,0,0.5); /* 반투명 배경 */
+    
+  }
+  
+  /* 모달 내용 스타일 */
+  #wrap .modal2 .modal-content {
+    background-color: #fefefe;
+    margin: 100px auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 1070px;    
+    height: 680px;
+    padding-bottom: 10px;
+  }
+  
+  /* 모달 닫기 버튼 스타일 */
+  #wrap .modal2 .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #wrap .modal2 .close:hover,
+  #wrap .modal2 .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+  
+/* 모달 3번 슬라이드버튼 모달 */
+
+#wrap .modal3 {
+    display: none; /* 모달을 기본적으로 숨김 */
+    position: fixed; /* 고정 위치 */
+    z-index: 5; /* 다른 요소 위에 배치 */
+    left: 0;
+    top: 0;
+    width: 100%;    
+    height: 100%;
+    
+    background-color: rgba(0,0,0,0.5); /* 반투명 배경 */
+    
+  }
+  
+  /* 모달 내용 스타일 */
+  #wrap .modal3 .modal-content {
+    background-color: #fefefe;
+    margin: 150px auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 970px;    
+    height: 580px;
+    padding-bottom: 10px;
+  }
+  
+  /* 모달 닫기 버튼 스타일 */
+  #wrap .modal3 .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #wrap .modal3 .close:hover,
+  #wrap .modal3 .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    
+
+
+
+ 
+/* 모달 4번 슬라이드버튼 모달 */
+
+#wrap .modal4 {
+    display: none; /* 모달을 기본적으로 숨김 */
+    position: fixed; /* 고정 위치 */
+    z-index: 5; /* 다른 요소 위에 배치 */
+    left: 0;
+    top: 0;
+    width: 100%;    
+    height: 100%;
+    
+    background-color: rgba(0,0,0,0.5); /* 반투명 배경 */
+    
+  }
+  
+  /* 모달 내용 스타일 */
+  #wrap .modal4 .modal-content {
+    background-color: #fefefe;
+    margin: 150px auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 970px;    
+    height: 580px;
+    padding-bottom: 10px;
+  }
+  
+  /* 모달 닫기 버튼 스타일 */
+  #wrap .modal4 .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #wrap .modal4 .close2:hover,
+  #wrap .modal4 .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    
+
+
+
+
+
+
+
+
